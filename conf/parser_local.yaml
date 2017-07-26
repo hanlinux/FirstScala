@@ -1,0 +1,16 @@
+parameters:
+  "spark.master": "spark://192.168.1.34:7077"
+  "spark.app.name": "pdca_parser"
+  "spark.submit.deployMode": "client"
+
+#  "spark.driver.cores": "1"
+#  "spark.driver.memory": "1g"
+#  "spark.executor.cores": "2"
+#  "spark.executor.memory": "4g"
+
+  "spark.cassandra.connection.host": "localhost"
+  "spark.cassandra.connection.port": "9042"
+  "spark.eventLog.dir": "file:////opt/spark/history"
+  "spark.history.fs.logDirectory": "file:////opt/spark/history"
+  "pdca.cassandra.schema.root.path": "schema"
+  "pdca.data.input.root.path": "sample_data"

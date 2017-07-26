@@ -1,0 +1,42 @@
+parameters:
+  #Spark
+#  "spark.master": "mesos://zk://............./mesos"
+  "spark.app.name": "pdca_parser"
+  "spark.submit.deployMode": "client"
+#  "spark.driver.cores": "1"
+#  "spark.driver.memory": "1g"
+#  "spark.executor.cores": "2"
+#  "spark.executor.memory": "4g"
+#
+#  #Spark History
+#  "spark.eventLog.enabled": "true"
+#  "spark.eventLog.compress": "true"
+#  "spark.eventLog.dir": "hdfs://.../spark-log"
+#  "spark.history.fs.logDirectory": "hdfs://.../spark-log"
+#
+#  #Mesos
+#  "spark.executor.uri": "file:///opt/smc/spark-2.0.2/spark-2.0.2-bin-2.2.0.tgz
+#  "spark.mesos.containerizer": "mesos"
+#  "spark.mesos.coarse": "true"
+#  "spark.mesos.extra.cores": "2"
+#
+#  #Cassandra
+#  "spark.cassandra.connection.host": "vSZZaFATPweb01,vSZZaFATPweb02,vSZZaFATPweb03"
+#  "spark.cassandra.connection.port": "9042"
+#  "spark.cassandra.input.consistency.level": "LOCAL_ONE"
+#  "spark.cassandra.output.consistency.level": "ALL"
+
+  #Parser
+  "parser.cassandra.schema.root.path": "schema"
+  "parser.data.input.root.path": "/sample_data"
+  "cassandra.replication.factor": "1"
+  "spark.driver.cores": "1"
+  "spark.driver.memory": "1g"
+  "spark.executor.cores": "2"
+  "spark.executor.memory": "4g"
+  "spark.cassandra.connection.host": "192.168.99.100"
+  "spark.cassandra.connection.port": "9042"
+  "parser.data.backup.root.path": "/backup"
+  "parser.data.processed.root.path": "/backup/processed"
+  "cassandra.replication.factor": "1"
+  
